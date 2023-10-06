@@ -111,4 +111,8 @@ p {
     max-height: 280px;
     width: 220px;
   }
+
+  p {
+    margin-top: -50px;
+  }
 }
