@@ -38,11 +38,11 @@ article {
 
 .s1,
 .l3 {
-  background-color: var(--accent-1);
+  background-color: var(--accent-2);
 }
 
 .s2{
-  background-color: var(--accent-2);
+  background-color: var(--accent-1);
 }
 
 .info {
