@@ -1,0 +1,125 @@
+p {
+      margin: 0;
+}
+main {
+    padding: 10px;
+}
+section {
+    display: grid;
+    gap: 1em;
+}
+
+article {
+  margin: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--primary-2);
+  container-name: cardContainer;
+  container-type: inline-size;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+  padding-inline: 1em;
+}
+
+.profilePic {
+  max-width: 100px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  height: 100px;
+}
+
+.radioBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--secondary);
+  color: white;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  padding-inline: 1.5em;
+  background-color: var(--accent-1);
+}
+
+.pText {
+  padding-inline: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.bigText {
+  font-size: 2.441rem;
+}
+
+.topbar h5 {
+    margin: 0;
+}
+@media (min-width: 650px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+
+  .pText {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+.info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-inline: 1.5em;
+   
+}
+.radioBtns {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.5em;
+    gap: 0.5em;
+}
+.mainCard {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+}
+
+@media (min-width: 850px) {
+section {
+    grid-template-columns:  repeat(auto-fill, minmax(300px, 1fr));
+}
+.topbar {
+    align-items: center;
+
+}
+}
